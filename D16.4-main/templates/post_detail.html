@@ -1,0 +1,28 @@
+{% extends 'flatpages/default.html' %}
+
+
+
+{% block title %}
+Post
+{% endblock title %}
+
+<!-- В контенте на странице мы выводим сам товар, идентификатор которого был передан в url -->
+{% block content %}
+    <h1>{{ post.header_post }} </h1>
+    <hr>{{ post.field }}
+    <hr>{{ post.text }}
+    <hr>{{ post.time_in }}
+
+        <h5>
+            {% for cat in category %}
+          <h5>  {{cat.category__name}}</h5>
+
+            {% if cat.category not in subscribe %}
+                          <button><a href="{% url 'subscribe' cat.category %}">Подписаться на новости категории</a></button>
+                {% else %}
+                          <button><a href="{% url 'unsubscribe' cat.category %}">Отписаться от новостей категории</a></button>
+            {% endif %}
+        </h5>
+{% endfor %}
+
+ {% endblock content %}

@@ -1,0 +1,72 @@
+2023-03-16 09:57:50,706 :: ERROR -- C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\utils\log.py / (<class 'django.contrib.auth.models.Group.DoesNotExist'>, DoesNotExist('Group matching query does not exist.'), <traceback object at 0x00000272D857F4C0>) :Internal Server Error: /accounts/signup/
+Traceback (most recent call last):
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\allauth\decorators.py", line 20, in wrap
+    resp = function(request, *args, **kwargs)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\views\decorators\debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\allauth\account\views.py", line 234, in dispatch
+    return super(SignupView, self).dispatch(request, *args, **kwargs)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\allauth\account\views.py", line 77, in dispatch
+    response = super(RedirectAuthenticatedUserMixin, self).dispatch(
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\allauth\account\views.py", line 207, in dispatch
+    return super(CloseableSignupMixin, self).dispatch(request, *args, **kwargs)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\allauth\account\views.py", line 105, in post
+    response = self.form_valid(form)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\allauth\account\views.py", line 248, in form_valid
+    self.user = form.save(self.request)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\NewsPortal\forms.py", line 35, in save
+    common_group = Group.objects.get(name='common')
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.Group.DoesNotExist: Group matching query does not exist.
+2023-03-16 09:57:50,712 :: ERROR -- C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\core\servers\basehttp.py / None :"POST /accounts/signup/ HTTP/1.1" 500 130339
+2023-03-16 09:58:13,514 :: ERROR -- C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\utils\log.py / (<class 'django.contrib.auth.models.Group.DoesNotExist'>, DoesNotExist('Group matching query does not exist.'), <traceback object at 0x00000272D850B880>) :Internal Server Error: /accounts/signup/
+Traceback (most recent call last):
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\allauth\decorators.py", line 20, in wrap
+    resp = function(request, *args, **kwargs)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\views\decorators\debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\allauth\account\views.py", line 234, in dispatch
+    return super(SignupView, self).dispatch(request, *args, **kwargs)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\allauth\account\views.py", line 77, in dispatch
+    response = super(RedirectAuthenticatedUserMixin, self).dispatch(
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\allauth\account\views.py", line 207, in dispatch
+    return super(CloseableSignupMixin, self).dispatch(request, *args, **kwargs)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\allauth\account\views.py", line 105, in post
+    response = self.form_valid(form)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\allauth\account\views.py", line 248, in form_valid
+    self.user = form.save(self.request)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\NewsPortal\forms.py", line 35, in save
+    common_group = Group.objects.get(name='common')
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.Group.DoesNotExist: Group matching query does not exist.
+2023-03-16 09:58:13,520 :: ERROR -- C:\Users\сергеев-ас\PycharmProjects\portals\venv\lib\site-packages\django\core\servers\basehttp.py / None :"POST /accounts/signup/ HTTP/1.1" 500 130339

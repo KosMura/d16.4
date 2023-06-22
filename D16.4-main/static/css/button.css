@@ -1,0 +1,31 @@
+.sbmt_application {
+    border-top: 1px solid #96d1f8 !important;
+    background: #c90404 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff1f1f), to(#c90404));
+    background: -webkit-linear-gradient(top, #ff1f1f, #c90404);
+    background: -moz-linear-gradient(top, #ff1f1f, #c90404);
+    background: -ms-linear-gradient(top, #ff1f1f, #c90404);
+    background: -o-linear-gradient(top, #ff1f1f, #c90404);
+    padding: 17px 34px;
+    -webkit-border-radius: 13px !important;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 18px;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.sbmt_application:hover {
+    border-top-color: #28597a;
+    background: #28597a;
+    color: #ccc;
+}
+.busbmt_application:active {
+    border-top-color: #1b435e;
+    background: #1b435e;
+}
